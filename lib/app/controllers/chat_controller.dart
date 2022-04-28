@@ -1,0 +1,1 @@
+// class ChatController extends GetxController {}
