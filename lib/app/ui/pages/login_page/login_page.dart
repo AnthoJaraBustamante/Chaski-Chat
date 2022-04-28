@@ -38,7 +38,7 @@ class LoginPage extends StatelessWidget {
               RegularButton(
                 text: 'Login',
                 onTap: () => Navigator.pushNamedAndRemoveUntil(
-                    context, AppRoutes.chat, (route) => false),
+                    context, AppRoutes.user, (route) => false),
               ),
               const SizedBox(height: 35),
               const Hero(
