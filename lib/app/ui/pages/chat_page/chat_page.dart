@@ -1,3 +1,4 @@
+import 'package:chat_take_home_test/app/ui/global_widgets/close_app_dialog.dart';
 import 'package:flutter/material.dart';
 
 class ChatPage extends StatelessWidget {
@@ -5,12 +6,18 @@ class ChatPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('ChatPage'),
-      ),
-      body: SafeArea(
-        child: Text('ChatController'),
+    return WillPopScope(
+      onWillPop: () async {
+        bool? exit = await closeApp(context);
+        return exit!;
+      },
+      child: Scaffold(
+        appBar: AppBar(
+          title: Text('ChatPage'),
+        ),
+        body: SafeArea(
+          child: Text('ChatController'),
+        ),
       ),
     );
   }
