@@ -1,3 +1,4 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/59941703-278f-4ca8-981f-69dfb89e1079/deploy-status)](https://app.netlify.com/sites/chaski-chat-take-home-test/deploys)
 # chat_take_home_test CHASKI CHAT
 
 A take-home-test Flutter project.
