@@ -1,3 +1,4 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/59941703-278f-4ca8-981f-69dfb89e1079/deploy-status)](https://app.netlify.com/sites/chaski-chat-take-home-test/deploys)
 # chat_take_home_test CHASKI CHAT
 
 A take-home-test Flutter project.
@@ -33,4 +34,3 @@ Once the latest Flutter version has been installed, type the following command l
 ![Chat Page 1](screen_shots/05_chat_screen_01.png)
 ![Chat Page 2](screen_shots/06_chat_screen_02.png)
 ![Chat Page 3](screen_shots/07_chat_screen_03.png)
-!
