@@ -38,7 +38,7 @@ class RegisterPage extends StatelessWidget {
               RegularButton(
                 text: 'Register',
                 onTap: () => Navigator.pushNamedAndRemoveUntil(
-                    context, AppRoutes.chat, (route) => false),
+                    context, AppRoutes.user, (route) => false),
               ),
               const SizedBox(height: 35),
               const Hero(
