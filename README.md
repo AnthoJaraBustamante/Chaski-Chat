@@ -1,6 +1,6 @@
 # chat_take_home_test CHASKI CHAT
 
-A take-home-test project.
+A take-home-test Flutter project.
 
 ## Getting Started
 
@@ -10,7 +10,6 @@ This project is a starting point for a Flutter application.
 A few resources to get you started if this is your first Flutter project:
 
 - [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
 
 For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,
@@ -22,3 +21,7 @@ Once the latest Flutter version has been installed, type the following command l
 > flutter pub get
 > flutter run
 
+## Screenshots
+
+![Splash Page](https://github.com/AnthoJaraBustamante/Chaski-Chat/blob/master/screen_shots/01_splash_screen.png?raw=true)
+![Login Page](screen_shots/02_login_screen.png)
