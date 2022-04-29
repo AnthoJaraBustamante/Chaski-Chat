@@ -1,32 +1,32 @@
 {
-    "name": "chat_take_home_test",
-    "short_name": "chat_take_home_test",
+    "name": "Chaski Chat",
+    "short_name": "ChaskiChat",
     "start_url": ".",
     "display": "standalone",
-    "background_color": "#0175C2",
-    "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "background_color": "#0C0C0C",
+    "theme_color": "#FFFFFF",
+    "description": "A Flutter take-home-test project.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
         {
-            "src": "icons/Icon-192.png",
+            "src": "assets/chaski-mini.png",
             "sizes": "192x192",
             "type": "image/png"
         },
         {
-            "src": "icons/Icon-512.png",
+            "src": "assets/chaski-mini.png",
             "sizes": "512x512",
             "type": "image/png"
         },
         {
-            "src": "icons/Icon-maskable-192.png",
+            "src": "assets/chaski-mini.png",
             "sizes": "192x192",
             "type": "image/png",
             "purpose": "maskable"
         },
         {
-            "src": "icons/Icon-maskable-512.png",
+            "src": "assets/chaski-mini.png",
             "sizes": "512x512",
             "type": "image/png",
             "purpose": "maskable"
