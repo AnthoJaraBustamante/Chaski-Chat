@@ -33,4 +33,3 @@ Once the latest Flutter version has been installed, type the following command l
 ![Chat Page 1](screen_shots/05_chat_screen_01.png)
 ![Chat Page 2](screen_shots/06_chat_screen_02.png)
 ![Chat Page 3](screen_shots/07_chat_screen_03.png)
-!
