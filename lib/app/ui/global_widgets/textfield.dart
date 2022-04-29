@@ -4,12 +4,30 @@ class RegularTextField extends StatelessWidget {
   const RegularTextField({
     Key? key,
     required this.labelText,
-    required this.icon,
+    this.margin = const EdgeInsets.symmetric(horizontal: 60),
     this.obscureText = false,
+    this.onPressedSuffixIcon,
+    this.prefixIcon,
+    this.suffixIcon,
+    this.suffixIconTooltip,
+    this.keyboardType,
+    this.controller,
+    this.onEditingComplete,
+    this.focusNode,
+    this.onChanged,
   }) : super(key: key);
   final String labelText;
-  final IconData icon;
+  final IconData? prefixIcon;
+  final IconData? suffixIcon;
   final bool obscureText;
+  final EdgeInsetsGeometry margin;
+  final void Function()? onPressedSuffixIcon;
+  final String? suffixIconTooltip;
+  final TextInputType? keyboardType;
+  final TextEditingController? controller;
+  final void Function()? onEditingComplete;
+  final void Function(String)? onChanged;
+  final FocusNode? focusNode;
 
   @override
   Widget build(BuildContext context) {
@@ -19,9 +37,14 @@ class RegularTextField extends StatelessWidget {
         elevation: 0,
         color: Colors.transparent,
         child: Container(
-          margin: const EdgeInsets.symmetric(horizontal: 60),
-          child: TextField(
+          margin: margin,
+          child: TextFormField(
+            focusNode: focusNode,
+            controller: controller,
+            onEditingComplete: onEditingComplete,
+            onChanged: onChanged,
             obscureText: obscureText,
+            keyboardType: keyboardType,
             decoration: InputDecoration(
               contentPadding:
                   const EdgeInsets.symmetric(vertical: 15.0, horizontal: 10),
@@ -32,7 +55,18 @@ class RegularTextField extends StatelessWidget {
               border: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(10),
               ),
-              prefixIcon: Icon(icon),
+              prefixIcon: prefixIcon == null ? null : Icon(prefixIcon),
+              suffixIcon: suffixIcon == null
+                  ? null
+                  : IconButton(
+                      onPressed: onPressedSuffixIcon,
+                      tooltip: suffixIconTooltip,
+                      splashRadius: 20,
+                      icon: Icon(
+                        suffixIcon,
+                        color: Colors.white,
+                      ),
+                    ),
             ),
           ),
         ),

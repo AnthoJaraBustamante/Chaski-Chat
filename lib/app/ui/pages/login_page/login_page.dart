@@ -27,12 +27,12 @@ class LoginPage extends StatelessWidget {
               const SizedBox(height: 20),
               const RegularTextField(
                 labelText: 'Email',
-                icon: Icons.email,
+                prefixIcon: Icons.email,
               ),
               const SizedBox(height: 20),
               const RegularTextField(
                 labelText: 'Password',
-                icon: Icons.lock,
+                prefixIcon: Icons.lock,
               ),
               const SizedBox(height: 35),
               RegularButton(
