@@ -18,10 +18,11 @@ samples, guidance on mobile development, and a full API reference.
 ## How to run the Project
 
 Once the latest Flutter version has been installed, type the following command lines in the Project root folder:
+
 -To update the project: `flutter update`
-> flutter pub get
+
 -To run the project: `flutter run`
-> flutter run
+ 
 
 ## Screenshots
 
